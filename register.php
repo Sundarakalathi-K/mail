@@ -71,7 +71,7 @@ include('db_config.php');
                 var username = $('#username').val();
                 var reenterUsername = $('#reenter-username').val();
 
-                if (username !== reenterUsername) {
+                if (username !== reenterUsername) { // usihg strict mode of equality operators
                     $('#username-match-error').text('Usernames do not match');
                     e.preventDefault(); // Prevent form submission
                 } else {
